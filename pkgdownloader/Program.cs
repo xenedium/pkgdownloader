@@ -68,7 +68,7 @@ namespace pkgdownloader
                     }
                 }
 
-                using var fileStream = new FileStream(foldir.FullName + "\\" + package.Substring(77), FileMode.CreateNew);
+                using var fileStream = new FileStream($@"{foldir.FullName}\{package.Substring(77)}", FileMode.CreateNew);
 
                 while (true)
                 {
